@@ -1,0 +1,176 @@
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: #4e5088;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4e5088), to(#000000));
+  background: linear-gradient(0deg, #4e5088 0%, #000000 100%);
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 95.5vh;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  border: 1px solid white;
+}
+
+h1, h2, h3, p, label {
+  color: #ffcfcf;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Inconsolata', monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-decoration: underline 2px white;
+          text-decoration: underline 2px white;
+  font-size: 7rem;
+  text-shadow: 5px 5px violet;
+  margin-bottom: 3rem;
+}
+
+#seleccionar-mascota {
+  height: 21rem;
+}
+
+#seleccionar-mascota h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0rem;
+  font-size: 3rem;
+}
+
+#seleccionar-mascota h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.7rem;
+}
+
+#seleccionar-mascota-nombre {
+  margin-left: 13rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.7rem;
+}
+
+#seleccionar-mascota-nombre label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 2rem;
+  border: 3px solid #00ffea;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  height: 2.5rem;
+  -webkit-transition: color 0.2s, background-color 1s;
+  transition: color 0.2s, background-color 1s;
+  margin: 2rem;
+}
+
+#seleccionar-mascota-nombre label:hover {
+  color: black;
+  background-color: #d8feff;
+}
+
+#seleccionar-mascota-nombre input[type='radio'] {
+  display: none;
+  position: relative;
+  right: 100px;
+}
+
+#seleccionar-mascota-nombre input[type='radio']:checked + label {
+  color: black;
+  background-color: #d8feff;
+}
+
+#seleccionar-mascota-nombre button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 7px 5px #9882ee;
+          box-shadow: 0px 0px 7px 5px #9882ee;
+  height: 4.7rem;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  color: antiquewhite;
+  padding: 10px;
+  -webkit-transition: font-size 0.2s, background-color 0.2s;
+  transition: font-size 0.2s, background-color 0.2s;
+}
+
+#seleccionar-mascota-nombre button:hover {
+  background-color: #ffd2d2;
+  color: #000000;
+}
+
+.card {
+  background-color: #071119;
+  height: 34rem;
+  width: 30rem;
+  border-radius: 4px;
+  margin: 0 3rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card:hover {
+  translate: -1rem -1rem;
+  -webkit-box-shadow: 1rem 1rem 0px #9373ff;
+          box-shadow: 1rem 1rem 0px #9373ff;
+}
+
+.card img {
+  position: absolute;
+  left: -23rem;
+  top: -8rem;
+  border-radius: 1rem;
+}
+
+.card img#img-elmati {
+  display: block;
+}
+
+.card img#img-eltomi {
+  display: none;
+  height: 25rem;
+  width: 25rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.card h4 {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+  overflow-wrap: break-word;
+}
+
+.card i {
+  display: block;
+  float: left;
+  color: #00ff22;
+  margin: 0 1rem 0rem 1rem;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
