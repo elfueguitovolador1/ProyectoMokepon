@@ -35,11 +35,31 @@ function seleccionarMascota(){
     let botonImagenelmati = document.getElementById('imagen-elmati')
     let botonImagenelqueso = document.getElementById('imagen-elqueso')
         
-    botonImagenelmati.addEventListener('click', mostrarImagen)
+    botonImagenelmati.addEventListener('click', mostrarImagenelmati)
+    botonImageneltomi.addEventListener('click', mostrarImageneltomi)
+    botonImagenelqueso.addEventListener('click', mostrarImagenelqueso)
  }
- function mostrarImagen(){
+ function mostrarImagenelmati(){
     
     let imagenMascota = document.getElementById('img-elmati')
+    if(imagenMascota.style.display == 'block'){
+        imagenMascota.style.display = 'none'
+    }else {
+        imagenMascota.style.display = 'block'
+    } 
+ }
+ function mostrarImageneltomi(){
+    
+    let imagenMascota = document.getElementById('img-eltomi')
+    if(imagenMascota.style.display == 'block'){
+        imagenMascota.style.display = 'none'
+    }else {
+        imagenMascota.style.display = 'block'
+    } 
+ }
+ function mostrarImagenelqueso(){
+    
+    let imagenMascota = document.getElementById('img-elqueso')
     if(imagenMascota.style.display == 'block'){
         imagenMascota.style.display = 'none'
     }else {

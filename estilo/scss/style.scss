@@ -102,25 +102,39 @@ h1{
     height: 34rem;
     width: 30rem;
     border-radius: 4px;
-    margin:  0 3rem;
+    margin:  0 2.3rem;
     transition: 1s;
     &:hover{
         translate: -1rem -1rem;
         box-shadow: 1rem 1rem 0px rgb(147, 115, 255)
     }
     & img{
-        position: absolute;
-        left: -23rem;
-        top: -8rem;
+    
         border-radius: 1rem;
         &#img-elmati{
-            display:block; 
-               
+            display:none; 
+               position: absolute;
+               left: -23rem;
+        top: -8rem;
         }
         &#img-eltomi{
+            
+            position: absolute;
+            left: -25rem;
+        top: -8rem;
             display: none;
-            height: 25rem;
-            width: 25rem;
+            height: 250px;
+            width: 250px;
+            object-fit:fill; 
+            
+        }
+        &#img-elqueso{
+            position: absolute;
+            left: -25rem;
+        top: -8rem;
+            display: none;
+            height: 250px;
+            width: 250px;
             object-fit:fill; 
         }
     }

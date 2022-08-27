@@ -128,7 +128,7 @@ h1 {
   height: 34rem;
   width: 30rem;
   border-radius: 4px;
-  margin: 0 3rem;
+  margin: 0 2.3rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -140,20 +140,34 @@ h1 {
 }
 
 .card img {
-  position: absolute;
-  left: -23rem;
-  top: -8rem;
   border-radius: 1rem;
 }
 
 .card img#img-elmati {
-  display: block;
+  display: none;
+  position: absolute;
+  left: -23rem;
+  top: -8rem;
 }
 
 .card img#img-eltomi {
+  position: absolute;
+  left: -25rem;
+  top: -8rem;
   display: none;
-  height: 25rem;
-  width: 25rem;
+  height: 250px;
+  width: 250px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.card img#img-elqueso {
+  position: absolute;
+  left: -25rem;
+  top: -8rem;
+  display: none;
+  height: 250px;
+  width: 250px;
   -o-object-fit: fill;
      object-fit: fill;
 }
