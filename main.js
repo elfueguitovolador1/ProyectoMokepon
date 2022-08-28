@@ -3,7 +3,7 @@ let ataqueEnemigo
 
 function iniciarJuego() {
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    // sectionSeleccionarAtaque.style.display='none'
+    sectionSeleccionarAtaque.style.display='none'
     
 }
 function seleccionarMascota(){

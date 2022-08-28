@@ -2,156 +2,156 @@
      font-family: 'Lilita One', cursive;
      font-size: 62.5%;
 }
-// body{
-//     background: #4e5088;
-// background: -webkit-linear-gradient(0deg, #4e5088 0%, #000000 100%);
-// background: linear-gradient(0deg, #4e5088 0%, #000000 100%);
+body{
+    background: #4e5088;
+background: -webkit-linear-gradient(0deg, #4e5088 0%, #000000 100%);
+background: linear-gradient(0deg, #4e5088 0%, #000000 100%);
     
-// }
-// .container{
+}
+.container{
  
-//     box-sizing: border-box;
-//     height: 95.5vh;
-//     margin:1.5rem 1.5rem 1.5rem 1.5rem;  
+    box-sizing: border-box;
+    height: 95.5vh;
+    margin:1.5rem 1.5rem 1.5rem 1.5rem;  
    
-//     border: 1px solid white;
+    border: 1px solid white;
     
-// }
-// h1, h2,h3, p, label {
-//     color: #ffcfcf;
-// }
+}
+h1, h2,h3, p, label {
+    color: #ffcfcf;
+}
 
-// h1{
-//     display: flex;
-//     font-family: 'Inconsolata', monospace;
-//     justify-content: center;
-//     text-decoration: underline 2px white;
-//     font-size:7rem;
-//     text-shadow: 5px 5px violet;
-//     margin-bottom: 3rem;
-// }
-// #seleccionar-mascota{
-//     height: 21rem;
+h1{
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    justify-content: center;
+    text-decoration: underline 2px white;
+    font-size:7rem;
+    text-shadow: 5px 5px violet;
+    margin-bottom: 3rem;
+}
+#seleccionar-mascota{
+    height: 21rem;
         
-//         & h2{
-//             display: flex;
-//             justify-content: center;
-//             margin-top: 0rem;
-//             font-size:3rem;
-//         }
-//         & h3{
-//             display: flex;
-//             justify-content: center;
-//             font-size:2.7rem;
-//         }
-//         &-nombre{
-//             margin-left:13rem;
-//             display: flex;
-//             justify-content: center;
-//             font-size:2.7rem;
+        & h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 0rem;
+            font-size:3rem;
+        }
+        & h3{
+            display: flex;
+            justify-content: center;
+            font-size:2.7rem;
+        }
+        &-nombre{
+            margin-left:13rem;
+            display: flex;
+            justify-content: center;
+            font-size:2.7rem;
             
-//             & label{
-//                 display: flex;
-//                 margin: 0.5rem 2rem;
-//                 border: 3px solid rgb(0, 255, 234);
-//                 border-radius: 4px; 
-//                 padding: 1rem 2rem;   
-//                 height: 2.5rem;
-//                 transition: color 0.2s, background-color 1s;  
-//                 margin: 2rem;
+            & label{
+                display: flex;
+                margin: 0.5rem 2rem;
+                border: 3px solid rgb(0, 255, 234);
+                border-radius: 4px; 
+                padding: 1rem 2rem;   
+                height: 2.5rem;
+                transition: color 0.2s, background-color 1s;  
+                margin: 2rem;
                 
-//                 &:hover{
-//                     color:black;
-//                     background-color: rgb(216, 254, 255);
-//                 }
-//             }
+                &:hover{
+                    color:black;
+                    background-color: rgb(216, 254, 255);
+                }
+            }
            
-//             input[type='radio']{
-//                 display: none;
-//             position: relative;
-//             right: 100px;
-//             }
-//             input[type='radio']:checked + label{
-//                 color:black;
-//                 background-color: rgb(216, 254, 255);
-//             }
-//             & button{
-//                 display: flex;
-//                 background-color: transparent;
-//                 box-shadow: 0px 0px 7px 5px rgb(152, 130, 238);
-//                 height: 4.7rem;    
-//                 border-radius: 4px;
-//                 font-size:1.8rem;
-//                 color:antiquewhite;
-//                 padding: 10px;
+            input[type='radio']{
+                display: none;
+            position: relative;
+            right: 100px;
+            }
+            input[type='radio']:checked + label{
+                color:black;
+                background-color: rgb(216, 254, 255);
+            }
+            & button{
+                display: flex;
+                background-color: transparent;
+                box-shadow: 0px 0px 7px 5px rgb(152, 130, 238);
+                height: 4.7rem;    
+                border-radius: 4px;
+                font-size:1.8rem;
+                color:antiquewhite;
+                padding: 10px;
              
-//                 transition: font-size 0.2s, background-color 0.2s;
+                transition: font-size 0.2s, background-color 0.2s;
 
-//             }
-//             & button:hover{
-//                 background-color: rgb(255, 210, 210);
-//                 color: #000000;
+            }
+            & button:hover{
+                background-color: rgb(255, 210, 210);
+                color: #000000;
                 
-//             }
-//         }
-// }
-// .card{
+            }
+        }
+}
+.card{
  
-//     background-color: rgb(7, 17, 25);
-//     height: 34rem;
-//     width: 30rem;
-//     border-radius: 4px;
-//     margin:  0 2.3rem;
-//     transition: 1s;
-//     &:hover{
-//         translate: -1rem -1rem;
-//         box-shadow: 1rem 1rem 0px rgb(147, 115, 255)
-//     }
-//     & img{
+    background-color: rgb(7, 17, 25);
+    height: 34rem;
+    width: 30rem;
+    border-radius: 4px;
+    margin:  0 2.3rem;
+    transition: 1s;
+    &:hover{
+        translate: -1rem -1rem;
+        box-shadow: 1rem 1rem 0px rgb(147, 115, 255)
+    }
+    & img{
     
-//         border-radius: 1rem;
-//         &#img-elmati{
-//             display:none; 
-//                position: absolute;
-//                left: -23rem;
-//         top: -8rem;
-//         }
-//         &#img-eltomi{
+        border-radius: 1rem;
+        &#img-elmati{
+            display:none; 
+               position: absolute;
+               left: -23rem;
+        top: -8rem;
+        }
+        &#img-eltomi{
             
-//             position: absolute;
-//             left: -25rem;
-//         top: -8rem;
-//             display: none;
-//             height: 250px;
-//             width: 250px;
-//             object-fit:fill; 
+            position: absolute;
+            left: -25rem;
+        top: -8rem;
+            display: none;
+            height: 250px;
+            width: 250px;
+            object-fit:fill; 
             
-//         }
-//         &#img-elqueso{
-//             position: absolute;
-//             left: -25rem;
-//         top: -8rem;
-//             display: none;
-//             height: 250px;
-//             width: 250px;
-//             object-fit:fill; 
-//         }
-//     }
-//      & h4{
-//         font-size: 2rem;
-//         color:white;
-//         margin:1rem;
-//         overflow-wrap:break-word ;
-//      }
-//     & i{
-//         display:block;
-//         float: left;
-//         color: rgb(0, 255, 34);
-//         margin: 0 1rem 0rem 1rem;
-//         font-size: 2.3rem;
-//         cursor: pointer;
-//     }
+        }
+        &#img-elqueso{
+            position: absolute;
+            left: -25rem;
+        top: -8rem;
+            display: none;
+            height: 250px;
+            width: 250px;
+            object-fit:fill; 
+        }
+    }
+     & h4{
+        font-size: 2rem;
+        color:white;
+        margin:1rem;
+        overflow-wrap:break-word ;
+     }
+    & i{
+        display:block;
+        float: left;
+        color: rgb(0, 255, 34);
+        margin: 0 1rem 0rem 1rem;
+        font-size: 2.3rem;
+        cursor: pointer;
+    }
       
-// }
+}
 
 
