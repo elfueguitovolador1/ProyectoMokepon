@@ -1,8 +1,9 @@
 let ataqueJugador 
 let ataqueEnemigo
+
 function iniciarJuego() {
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display='none'
+    // sectionSeleccionarAtaque.style.display='none'
     
 }
 function seleccionarMascota(){
@@ -79,6 +80,15 @@ function seleccionAtaqueEnemigo(){
         document.getElementById('ataque-enemigo').innerText = 'TIERRA' 
     }
     
+}
+function reglasCombate(){
+    let vidasEnemigo = documentt.getElementById('vidas-enemigo')
+    let vidasJugador = document.getElementById('vidas-jugador')
+    if(ataqueJugador == ataqueAgua){
+        
+        
+    }
+
 }
 function seleccionarAtaqueJugador(){
     let botonFuego= document.getElementById('ataque-fuego')

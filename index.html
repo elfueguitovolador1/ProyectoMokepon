@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./estilo/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/86e4e7059e.js" crossorigin="anonymous"></script>
     
 </head>
@@ -52,14 +52,21 @@
     
     <section id="seleccionar-ataque">
         <h2>Elige tu ataque:</h2>
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidasenemigo">3</span> vidas</p>
-        <p>
+        <span>mascota</span>
+        <div id="ataques-categorias">
+
+    </div>
+        <div id="ataques-normales">
             <button id="ataque-tierra">Tierra</button>
             <button id="ataque-agua">Agua</button>
             <button id="ataque-fuego">Fuego</button>
-        </p>
-    
+    </div>
+        <div id="ataques-soporte">
+
+        </div>
+
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
     <section id="mensajes">
         <p>Tu mascota ataco con <span id="ataque-jugador">tururu</span>, las mascotas del enemigo ataco con <span id="ataque-enemigo"></span> - Ganaste</p>
     </section>
