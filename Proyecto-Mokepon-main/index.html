@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./estilo/scss/seleccionMascota.css">
+    <link rel="stylesheet" href="./estilo/scss/seleccionAtaque.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86e4e7059e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>MOKEPON!</h1>
+    <img src="../Proyecto mokepon/img/eltomi.jpg" alt="" >
+    <section id="seleccionar-mascota">
+        <h2>Elegi tu bicho</h2>
+        <h3>Lo vago:</h3>
+        
+        <div id="seleccionar-mascota-nombre">
+            <div class="card card-eltomi">
+            <input type="radio" name="mascota" id="eltomi">
+        <label id="tomi" for="eltomi">eltomi</label>
+        <i class="fas fa-chevron-left" id="imagen-eltomi"></i>
+        <img src="img/eltomi.jpg" alt="" id="img-eltomi" >
+        <h4>Contando con un gran potencial de negociamiento y huida, eltomi es una solida opcion si se busca un juego estrategico sin jugadas a lo loco. <span ;>Eltomi tiene 50 por ciento mas de <b>probabilidad</b> en <b>ataques de probabilidad</b></span ></h4>
+    </div>
+    <div class="card card-elmati">
+           <input type="radio" name="mascota" id="elmati">     
+        <label id="mati" for="elmati">elmati</label>
+        <i class="fas fa-chevron-left" id="imagen-elmati" ></i>
+        <img src="img/elmati.jpg" alt="" id="img-elmati">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus voluptates ut perferendis ratione modi nobis earum exercitationem recusandae vero. Maxime vel quibusdam ab animi impedit ea libero debitis vitae, facilis autem unde error </h4>
+    </div>
+    <div class="card card-elqueso">
+             <input type="radio" name="mascota" id="elqueso">   
+        <label id="queso" for="elqueso">elqueso</label>
+        <i class="fas fa-chevron-left" id="imagen-elqueso"></i>
+        <img src="img/elqueso.jpg" alt="" id="img-elqueso">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima delectus voluptates ut perferendis ratione modi nobis earum exercitationem recusandae vero. Maxime vel quibusdam ab animi impedit ea libero debitis vitae, facilis autem unde error</h4>
+    </div>
+    </div>
+    <button id="btn-mascota">Seleccionar</button>
+    </section>
+
+    
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
+        
+    <div id="ataques-jugador">
+        <button id="ataque-tierra">Tierra 🌱</button>
+        <button id="ataque-agua">Agua 💧</button>
+        <button id="ataque-fuego">Fuego 🔥</button>
+</div>
+       <div id="vidas">
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+    </div>
+    <section id="mensajes">
+        <p>Tu mascota ataco con <span id="ataque-jugador">tururu</span>, las mascotas del enemigo ataco con <span id="ataque-enemigo"></span> -<span id="ganador"> Ganaste</span></p>
+    </section>
+    <button id="btn-reiniciar">Reiniciar</button>
+</section>
+</div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
