@@ -1,0 +1,46 @@
+#seleccionar-ataque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#seleccionar-ataque h2 {
+  font-size: 50px;
+}
+#seleccionar-ataque button {
+  background-color: rgb(123, 196, 255);
+  border-radius: 4px;
+  font-size: 30px;
+  margin: 40px;
+  cursor: pointer;
+  padding: 10px 40px;
+  transition: all 0.7s, color 0.2s;
+}
+#seleccionar-ataque button#ataque-fuego:hover {
+  color: white;
+  background-color: rgb(175, 0, 0);
+  transform: translate(-15px, -15px);
+}
+#seleccionar-ataque button#ataque-agua:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 255);
+  transform: translate(0px, -15px);
+}
+#seleccionar-ataque button#ataque-tierra:hover {
+  color: white;
+  background-color: rgb(29, 172, 0);
+  transform: translate(15px, -15px);
+}
+#seleccionar-ataque button#btn-reiniciar {
+  font-size: 25px;
+  background-color: rgb(251, 255, 0);
+}
+#seleccionar-ataque #vidas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#seleccionar-ataque #vidas p {
+  font-size: 20px;
+}/*# sourceMappingURL=seleccionAtaque.css.map */
