@@ -6,6 +6,8 @@
 }
 #seleccionar-ataque h2 {
   font-size: 50px;
+  -webkit-animation: BGcolorChanging-4colors 2s linear infinite alternate both;
+          animation: BGcolorChanging-4colors 2s linear infinite alternate both;
 }
 #seleccionar-ataque button {
   background-color: rgb(123, 196, 255);
@@ -33,14 +35,83 @@
 }
 #seleccionar-ataque button#btn-reiniciar {
   font-size: 25px;
-  background-color: rgb(251, 255, 0);
+  background-color: #a5ff8a;
+}
+#seleccionar-ataque button#btn-reiniciar:hover {
+  color: white;
+  background-color: #5a0075;
 }
 #seleccionar-ataque #vidas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 50px 50px;
+  border-bottom: 1px solid white;
 }
 #seleccionar-ataque #vidas p {
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+#seleccionar-ataque #container-msj {
+  background-color: rgba(255, 213, 196, 0.89);
+  border: 2px solid rgb(0, 0, 0);
+  width: 60%;
+  height: 300px;
+  box-shadow: 0px 0px 2px 5px rgb(228, 125, 121);
+  border-radius: 3px;
+}
+#seleccionar-ataque #mensajes {
+  font-size: 25px;
+  margin: 40px;
+}
+#seleccionar-ataque #mensajes p {
+  color: black;
+}
+
+@-webkit-keyframes BGcolorChanging-4colors {
+  0% {
+    color: rgb(255, 131, 109);
+  }
+  15% {
+    color: rgb(255, 246, 117);
+  }
+  30% {
+    color: rgb(109, 255, 109);
+  }
+  55% {
+    color: rgb(109, 255, 248);
+  }
+  70% {
+    color: rgb(109, 111, 255);
+  }
+  85% {
+    color: rgb(189, 109, 255);
+  }
+  100% {
+    color: rgb(255, 109, 116);
+  }
+}
+
+@keyframes BGcolorChanging-4colors {
+  0% {
+    color: rgb(255, 131, 109);
+  }
+  15% {
+    color: rgb(255, 246, 117);
+  }
+  30% {
+    color: rgb(109, 255, 109);
+  }
+  55% {
+    color: rgb(109, 255, 248);
+  }
+  70% {
+    color: rgb(109, 111, 255);
+  }
+  85% {
+    color: rgb(189, 109, 255);
+  }
+  100% {
+    color: rgb(255, 109, 116);
+  }
 }/*# sourceMappingURL=seleccionAtaque.css.map */

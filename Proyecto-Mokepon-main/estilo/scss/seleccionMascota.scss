@@ -3,12 +3,11 @@
      font-size: 62.5%;
 }
 body{
-    background: #4e5088;
-background: -webkit-linear-gradient(0deg, #4e5088 0%, #000000 100%);
-background: linear-gradient(0deg, #4e5088 0%, #000000 100%);
-    background-image: url(/Proyecto-Mokepon-main/img/fondo-pagina-principal.png);
- 
-    object-fit: fill;
+    
+    background-image: url(/Proyecto-Mokepon-main/img/fondo-pagina-principal2.png);
+    
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .container{
  
@@ -30,7 +29,7 @@ h1{
     text-decoration: underline 2px white;
     font-size:7rem;
     text-shadow: 5px 5px violet;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 #seleccionar-mascota{
     display: flex;
@@ -89,14 +88,15 @@ h1{
 }
 button#btn-mascota{
     display: flex;
-    background-color: transparent;
+    background-color: rgb(18, 5, 53);
 
     box-shadow: 0px 0px 7px 5px rgb(152, 130, 238);
-    height: 120px;    
+    height:50px;    
     width: 250px;
     justify-content: center;
+    align-items: center;
     border-radius: 4px;
-    font-size:4rem;
+    font-size:3rem;
     color:antiquewhite;
     padding: 10px;
  
@@ -111,13 +111,13 @@ button#btn-mascota{
 .card{
  
     background-color: rgb(7, 17, 25);
-    height: 40rem;
-    width: 30rem;
+    height: 450px;
+    width: 300px;
     border-radius: 4px;
-    margin:  0 7rem;
+    margin: 3rem 7rem -10px 70px;
     transition: 1s;
     &:hover{
-        translate: -1rem -1rem;
+        transform:translate(-1rem,-1rem);
         box-shadow: 1rem 1rem 0px rgb(147, 115, 255)
     }
     & img{

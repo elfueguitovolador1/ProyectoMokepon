@@ -5,7 +5,7 @@ let vidaE = 3;
  
 function iniciarJuego() {
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    // sectionSeleccionarAtaque.style.display='none'
+    sectionSeleccionarAtaque.style.display='none'
     
 }
 function seleccionarMascota(){
@@ -30,7 +30,20 @@ function seleccionarMascota(){
     let ataqueSeleccionado =document.getElementById('seleccionar-mascota')
     ataqueSeleccionado.style.display='none'
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display='block'
+    sectionSeleccionarAtaque.style.display='flex'
+}
+function seleccionarMascotaEnemigo(){
+    let ataqueAleatorio = aleatorio(1,3)
+    let nombreMascotaEnemigo = document.getElementById('mascota-enemigo')
+
+    if(ataqueAleatorio == 1){
+        nombreMascotaEnemigo.innerText ='eltomi'
+    }else if(ataqueAleatorio == 2){
+        nombreMascotaEnemigo.innerText ='elmati'
+    }else if(ataqueAleatorio == 3){
+        nombreMascotaEnemigo.innerText ='elqueso'
+    }
+
 }
  function mostrarImagenMascota(){
     
@@ -72,7 +85,6 @@ function seleccionarMascota(){
 function seleccionAtaqueEnemigo(){
     let ataqueAleatorio = aleatorio(1,3)
     if(ataqueAleatorio == 1){
-        
         document.getElementById('ataque-enemigo').innerText = 'FUEGO' 
         ataqueEnemigo = "FUEGO";
     }else if(ataqueAleatorio == 2){
@@ -84,28 +96,6 @@ function seleccionAtaqueEnemigo(){
     }
     
 }
-function reglasCombate(){
-  
-    let resultado = document.getElementById('ganador');
-            if(ataqueJugador == "AGUA"  && ataqueEnemigo == "FUEGO"){
-                resultado.innerHTML = 'GANASTE!!'
-                    vidaE -= 1;
-    }else if(ataqueJugador == "FUEGO"  && ataqueEnemigo == "TIERRA"){
-                resultado.innerHTML = 'GANASTE!!'
-                    vidaE -= 1;
-        }else if(ataqueJugador == "TIERRA"&&ataqueEnemigo == "AGUA"){
-                resultado.innerHTML = 'GANASTE!!'
-                    vidaE = vidaE - 1;
-        }else if(ataqueJugador == ataqueEnemigo){
-        resultado.innerHTML = 'empatas mirey'
-            }else{
-                resultado.innerHTML = 'perdes nazi'
-                vidaJ -=1;
-            }
-            vida()
-
-}
-
 function seleccionarAtaqueJugador(){
     let botonFuego= document.getElementById('ataque-fuego')
     let botonAgua= document.getElementById('ataque-agua')
@@ -137,17 +127,25 @@ function ataqueTierra(){
         document.getElementById('ataque-jugador').innerHTML = 'TIERRA' 
         seleccionAtaqueEnemigo()
 }
-function seleccionarMascotaEnemigo(){
-    let ataqueAleatorio = aleatorio(1,3)
-    let nombreMascotaEnemigo = document.getElementById('mascota-enemigo')
-
-    if(ataqueAleatorio == 1){
-        nombreMascotaEnemigo.innerText ='eltomi'
-    }else if(ataqueAleatorio == 2){
-        nombreMascotaEnemigo.innerText ='elmati'
-    }else if(ataqueAleatorio == 3){
-        nombreMascotaEnemigo.innerText ='elqueso'
-    }
+function reglasCombate(){
+  
+    let resultado = document.getElementById('ganador');
+            if(ataqueJugador == "AGUA"  && ataqueEnemigo == "FUEGO"){
+                resultado.innerHTML = 'GANASTE!!'
+                    vidaE -= 1;
+    }else if(ataqueJugador == "FUEGO"  && ataqueEnemigo == "TIERRA"){
+                resultado.innerHTML = 'GANASTE!!'
+                    vidaE -= 1;
+        }else if(ataqueJugador == "TIERRA"&&ataqueEnemigo == "AGUA"){
+                resultado.innerHTML = 'GANASTE!!'
+                    vidaE = vidaE - 1;
+        }else if(ataqueJugador == ataqueEnemigo){
+        resultado.innerHTML = 'empatas mirey'
+            }else{
+                resultado.innerHTML = 'perdes nazi'
+                vidaJ -=1;
+            }
+            vida()
 
 }
 function vida(){
@@ -186,5 +184,4 @@ mostrarImagenMascota();
 reglasCombate();
 reiniciarJuego()
 
-let ataqueSeleccionado =document.getElementById('seleccionar-mascota')
-    ataqueSeleccionado.style.display='none'
+

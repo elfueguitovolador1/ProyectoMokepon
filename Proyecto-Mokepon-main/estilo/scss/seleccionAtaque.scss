@@ -4,8 +4,10 @@
     align-items: center;
     flex-direction: column;
     
+    
         & h2{
     font-size: 50px;
+    animation: BGcolorChanging-4colors 2s linear infinite alternate both;
             }
         & button{
             background-color: rgb(123, 196, 255);
@@ -32,17 +34,63 @@
         }
             &#btn-reiniciar{
                 font-size:25px;
-                background-color:rgb(251, 255, 0);
+                background-color:#a5ff8a;
+                &:hover{
+                    color: invert($color: #000000);
+                    background-color: invert($color: #a5ff8a);
+                }
             }
     }
         & #vidas{
-            display: flex;
-            flex-direction: column;
-            justify-content:center;
-            align-items: center;
+            
+            display: grid;
+            grid-template-columns: 550px 550px;
+            grid-template-rows: 50px 50px;
+           border-bottom: 1px solid white;
         & p{
-            font-size:20px;
+            font-size:25px;
+            text-align:center;
+            color: black;
 
         }
     }
+            & #container-msj{
+               background-color: rgba(255, 213, 196, 0.89);
+                border:2px solid rgb(0, 0, 0);
+                width: 60%;
+                height: 300px;
+                box-shadow: 0px 0px 2px 5px rgb(228, 125, 121);
+                border-radius: 3px;
+            }
+            #mensajes{
+                font-size: 25px;
+                margin: 40px;
+                    & p{
+                        color: black;
+                    }
+            }
+}
+@keyframes BGcolorChanging-4colors{
+    0%{
+        color: rgb(255, 131, 109);
+    }
+    15%{
+        color: rgb(255, 246, 117);
+    }
+    30%{
+        color: rgb(109, 255, 109);
+    }
+    55%{
+        color: rgb(109, 255, 248);
+    }
+    70%{
+        color: rgb(109, 111, 255);
+    }
+    85%{
+        color: rgb(189, 109, 255);
+    }
+    100%{
+        color: rgb(255, 109, 116);
+    }
+    
 }
