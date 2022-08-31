@@ -182,6 +182,7 @@ seleccionarAtaqueJugador()
 window.addEventListener('load', iniciarJuego)
 mostrarImagenMascota();
 reglasCombate();
-reiniciarJuego()
+reiniciarJuego();
+
 
 
