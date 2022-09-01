@@ -2,7 +2,48 @@ let ataqueJugador
 let ataqueEnemigo
 let vidaJ = 3;
 let vidaE = 3;
- 
+ let bichos = [];
+
+class Bicho{
+        constructor(nombre, foto, vida){
+            this.nombre=nombre;
+            this.foto=foto;
+            this.vida= vida;
+            this.ataque = [];       
+        }
+}
+
+    let elmati = new Bicho('elmati', 'img/elmati.png', 5);
+    let eltomi = new Bicho('elmati', 'img/eltomi.png', 8);
+    let elqueso = new Bicho('elmati', 'img/elqueso.png', 4);
+
+            elmati.ataque.push(
+                { nombre: '💧', id: 'boton-agua'},
+                { nombre: '💧', id: 'boton-agua'},
+                { nombre: '💧', id: 'boton-agua'},
+                { nombre: '🔥', id: 'boton-agua'},
+                { nombre: '🌱', id: 'boton-tierra'}
+            );
+            eltomi.ataque.push(
+                { nombre: '🌱', id: 'boton-tierra'},
+                { nombre: '🌱', id: 'boton-tierra'},
+                { nombre: '🌱', id: 'boton-tierra'},
+                { nombre: '🔥', id: 'boton-agua'},
+                { nombre: '💧', id: 'boton-agua'}
+            );
+            elqueso.ataque.push(
+                { nombre: '🔥', id: 'boton-agua'},
+                { nombre: '🔥', id: 'boton-agua'},
+                { nombre: '🔥', id: 'boton-agua'},
+                { nombre: '💧', id: 'boton-agua'},
+                { nombre: '🌱', id: 'boton-tierra'}
+            );
+
+
+            bichos.push(elmati, eltomi, elqueso)
+
+
+
 function iniciarJuego() {
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
     sectionSeleccionarAtaque.style.display='none'
