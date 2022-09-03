@@ -2,10 +2,14 @@ html {
   font-family: "Mukta", sans-serif;
   font-size: 62.5%;
 }
+@media (max-width: 638px) {
+  html {
+    font-size: 30%;
+  }
+}
 
 body {
   background-image: url(/Proyecto-Mokepon-main/img/fondo-pagina-principal2.png);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -101,11 +105,18 @@ button#btn-mascota:hover {
 
 .card {
   background-color: rgb(7, 17, 25);
-  height: 450px;
-  width: 300px;
+  height: 45rem;
+  width: 30rem;
   border-radius: 4px;
   margin: 3rem 7rem -10px 70px;
   transition: 1s;
+}
+@media (max-width: 638px) {
+  .card {
+    width: 25rem;
+    height: 55rem;
+    margin: 5rem 1rem 1rem 1rem;
+  }
 }
 .card:hover {
   transform: translate(-1rem, -1rem);

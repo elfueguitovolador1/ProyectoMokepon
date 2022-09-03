@@ -1,3 +1,7 @@
+button {
+  border: none;
+}
+
 #seleccionar-ataque {
   display: flex;
   justify-content: center;
@@ -5,18 +9,24 @@
   flex-direction: column;
 }
 #seleccionar-ataque h2 {
-  font-size: 50px;
+  font-size: 5rem;
   -webkit-animation: BGcolorChanging-4colors 2s linear infinite alternate both;
           animation: BGcolorChanging-4colors 2s linear infinite alternate both;
 }
 #seleccionar-ataque button {
   background-color: rgb(123, 196, 255);
-  border-radius: 4px;
-  font-size: 30px;
-  margin: 40px;
+  border-radius: 0.4rem;
+  font-size: 3rem;
+  margin: 4rem;
   cursor: pointer;
-  padding: 10px 40px;
+  padding: 1rem 4rem;
   transition: all 0.7s, color 0.2s;
+  border: none;
+}
+@media (max-width: 638px) {
+  #seleccionar-ataque button {
+    margin: 10rem 2rem 20rem 2rem;
+  }
 }
 #seleccionar-ataque button#ataque-fuego:hover {
   color: white;
@@ -34,21 +44,28 @@
   transform: translate(15px, -15px);
 }
 #seleccionar-ataque button#btn-reiniciar {
-  font-size: 25px;
-  background-color: #a5ff8a;
+  font-size: 2.5rem;
+  background-color: #ff3c00;
+  font-weight: 400;
 }
 #seleccionar-ataque button#btn-reiniciar:hover {
   color: white;
-  background-color: #5a0075;
+  background-color: #00c3ff;
 }
 #seleccionar-ataque #vidas {
   display: grid;
-  grid-template-columns: 550px 550px;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 55rem 55rem;
+  grid-template-rows: 5rem 5rem;
   border-bottom: 1px solid white;
 }
+@media (max-width: 369px) {
+  #seleccionar-ataque #vidas {
+    grid-template-columns: 75rem 75rem;
+    grid-template-rows: 100rem 5rem;
+  }
+}
 #seleccionar-ataque #vidas p {
-  font-size: 25px;
+  font-size: 2.5rem;
   text-align: center;
   color: black;
 }
@@ -56,13 +73,13 @@
   background-color: rgba(255, 213, 196, 0.89);
   border: 2px solid rgb(0, 0, 0);
   width: 60%;
-  height: 300px;
+  height: 30rem;
   box-shadow: 0px 0px 2px 5px rgb(228, 125, 121);
   border-radius: 3px;
 }
 #seleccionar-ataque #mensajes {
-  font-size: 25px;
-  margin: 40px;
+  font-size: 2.5rem;
+  margin: 4rem;
 }
 #seleccionar-ataque #mensajes p {
   color: black;

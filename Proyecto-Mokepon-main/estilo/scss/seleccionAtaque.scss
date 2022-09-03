@@ -1,96 +1,126 @@
-#seleccionar-ataque{
+button {
+    border: none;
+}
+
+#seleccionar-ataque {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
-         & h2{
-    font-size: 50px;
-    animation: BGcolorChanging-4colors 2s linear infinite alternate both;
-            }
-        & button{
-            background-color: rgb(123, 196, 255);
-            border-radius: 4px;
-            font-size: 30px;
-            margin: 40px;
-            cursor: pointer;
-            padding: 10px 40px;
-            transition:all 0.7s,color 0.2s;
-            &#ataque-fuego:hover{
-                color: white;
-                background-color: rgb(175, 0, 0);
-                transform:translate(-15px, -15px);
-                    }
-            &#ataque-agua:hover{
-                    color: rgb(255, 255, 255);
-                    background-color: rgb(0, 119, 255);
-                    transform:translate(0px, -15px);
-            }
-            &#ataque-tierra:hover{
-                color: white;
-                background-color: rgb(29, 172, 0);
-                transform:translate(15px, -15px);
-        }
-            &#btn-reiniciar{
-                font-size:25px;
-                background-color:#a5ff8a;
-                &:hover{
-                    color: invert($color: #000000);
-                    background-color: invert($color: #a5ff8a);
-                }
-            }
-    }
-        & #vidas{
-            
-            display: grid;
-            grid-template-columns: 550px 550px;
-            grid-template-rows: 50px 50px;
-           border-bottom: 1px solid white;
-        & p{
-            font-size:25px;
-            text-align:center;
-            color: black;
 
+    & h2 {
+        font-size: 5rem;
+        animation: BGcolorChanging-4colors 2s linear infinite alternate both;
+    }
+
+    & button {
+        @media (max-width: 638px) {
+            margin: 10rem 2rem 20rem 2rem;
+        }
+
+        background-color: rgb(123, 196, 255);
+        border-radius: 0.4rem;
+        font-size: 3rem;
+        margin: 4rem;
+        cursor: pointer;
+        padding: 1rem 4rem;
+        transition: all 0.7s,
+        color 0.2s;
+        border: none;
+
+        &#ataque-fuego:hover {
+            color: white;
+            background-color: rgb(175, 0, 0);
+            transform: translate(-15px, -15px);
+        }
+
+        &#ataque-agua:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 119, 255);
+            transform: translate(0px, -15px);
+        }
+
+        &#ataque-tierra:hover {
+            color: white;
+            background-color: rgb(29, 172, 0);
+            transform: translate(15px, -15px);
+        }
+
+        &#btn-reiniciar {
+            font-size: 2.5rem;
+            background-color: #ff3c00;
+            font-weight: 400;
+
+            &:hover {
+                color: invert($color: #000000);
+                background-color: invert($color: #ff3c00);
+            }
         }
     }
-            & #container-msj{
-               background-color: rgba(255, 213, 196, 0.89);
-                border:2px solid rgb(0, 0, 0);
-                width: 60%;
-                height: 300px;
-                box-shadow: 0px 0px 2px 5px rgb(228, 125, 121);
-                border-radius: 3px;
-            }
-            #mensajes{
-                font-size: 25px;
-                margin: 40px;
-                    & p{
-                        color: black;
-                    }
-            }
+
+    & #vidas {
+        @media (max-width: 369px) {
+            grid-template-columns: 75rem 75rem;
+            grid-template-rows: 100rem 5rem;
+        }
+
+        display: grid;
+        grid-template-columns: 55rem 55rem;
+        grid-template-rows: 5rem 5rem;
+        border-bottom: 1px solid white;
+
+        & p {
+            font-size: 2.5rem;
+            text-align: center;
+            color: black;
+        }
+    }
+
+    & #container-msj {
+        background-color: rgba(255, 213, 196, 0.89);
+        border: 2px solid rgb(0, 0, 0);
+        width: 60%;
+        height: 30rem;
+        box-shadow: 0px 0px 2px 5px rgb(228, 125, 121);
+        border-radius: 3px;
+    }
+
+    #mensajes {
+        font-size: 2.5rem;
+        margin: 4rem;
+
+        & p {
+            color: black;
+        }
+    }
 }
-@keyframes BGcolorChanging-4colors{
-    0%{
+
+@keyframes BGcolorChanging-4colors {
+    0% {
         color: rgb(255, 131, 109);
     }
-    15%{
+
+    15% {
         color: rgb(255, 246, 117);
     }
-    30%{
+
+    30% {
         color: rgb(109, 255, 109);
     }
-    55%{
+
+    55% {
         color: rgb(109, 255, 248);
     }
-    70%{
+
+    70% {
         color: rgb(109, 111, 255);
     }
-    85%{
+
+    85% {
         color: rgb(189, 109, 255);
     }
-    100%{
+
+    100% {
         color: rgb(255, 109, 116);
     }
-    
 }
